@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OliGasService Navigator</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        function displ(ddd) {
+            var el = document.getElementById(ddd);
+            if (el.className.indexOf('hidden') >= 0) {
+                el.className = 'text-box'; document.getElementById(ddd + '-link').innerText = 'Скрыть текст';
+            }
+            else {
+                el.className = 'text-box hidden';
+                document.getElementById(ddd + '-link').innerText = 'Показать текст';
+            }
+        }
+        // type = "text/javascript" >
+        //     function displ(ddd) {
+        //         var el = document.getElementById(ddd);
+        //         if (el.className.indexOf('hidden') >= 0) {
+        //             el.className = 'text-box'; document.getElementById(ddd + '-link').innerText = 'Скрыть текст';
+        //         }
+        //         else {
+        //             el.className = 'text-box hidden';
+        //             document.getElementById(ddd + '-link').innerText = 'Показать текст';
+        //         }
+        //     }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="header__content">
+                <div class="header__content-left">
+                    <div class="menu">
+                        <div class="menu-items drop1">
+                            <div class="menu__item">
+                                <img src="image/header_menu_level_2.png" alt="">
+                            </div>
+                            <div class="menu__item-text">
+                                ЗАКАЗЧИКИ
+                            </div>
+                            <div class="drop__hower drop1__hover">
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-1.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        НЕДРОПОЛЬЗОВАТЕЛИ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-2.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ТРАНСПОРТ УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-3.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ПЕРЕРАБОТКА УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-4.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        СБЫТ УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-5.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ГЕНДПОДРЯДЧИКИ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-items drop2">
+                            <div class="menu__item">
+                                <img src="image/header_menu_level_2.png" alt="">
+                            </div>
+                            <div class="menu__item-text">
+                                ПОСТАВЩИКИ
+                            </div>
+                            <div class="drop__hower drop2__hover">
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-1.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        НЕДРОПОЛЬЗОВАТЕЛИ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-2.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ТРАНСПОРТ УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-3.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ПЕРЕРАБОТКА УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-4.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        СБЫТ УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu__item">
+                                <img src="image/header_menu_level_2.png" alt="">
+                            </div>
+                            <div class="menu__item-text">
+                                ИННОВАЦИИ
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu__item">
+                                <img src="image/header_menu_level_2.png" alt="">
+                            </div>
+                            <div class="menu__item-text">
+                                ПРОЕКТЫ
+                            </div>
+                        </div>
+                        <div class="menu-items drop5">
+                            <div class="menu__item">
+                                <img src="image/header_menu_level_2.png" alt="">
+                            </div>
+                            <div class="menu__item-text">
+                                ИНФОРМАЦИЯ
+                            </div>
+                            <div class="drop__hower drop5__hover">
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-1.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        НЕДРОПОЛЬЗОВАТЕЛИ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-2.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ТРАНСПОРТ УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-3.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ПЕРЕРАБОТКА УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-4.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        СБЫТ УЛЕВОДОРОДОВ
+                                    </div>
+                                </div>
+                                <div class="drop__hover-item">
+                                    <div class="drop__hover-img">
+                                        <img src="image/h1-5.jpg" alt="">
+                                    </div>
+                                    <div class="drop__hover-text">
+                                        <div class="menu__item">
+                                            <img id="menu-img" src="image/header_menu_level_2.png" alt="">
+                                        </div>
+                                        ГЕНДПОДРЯДЧИКИ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header__content-rignt">
+                    <div class="header__country">
+                        <div class="header__country-img">
+                            <img src="image/russia.png" alt="">
+                        </div>
+                        <div class="header__country-in">
+                            <div class="header__country-title">
+                                Страна
+                            </div>
+                            <div class="header__country-text">
+                                Россия
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__lang">
+                        <div class="header__lang-img">
+                            <img src="image/russia.png" alt="">
+                        </div>
+                        <div class="header__lang-in">
+                            <div class="header__lang-title">
+                                Язык
+                            </div>
+                            <div class="header__lang-text">
+                                Русский
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="list">
+            <div class="container">
+                <div class="list__inner">
+                    <div class="list__title">
+                        <div class="list__title-text1">
+                            Оборудование и инструмент
+                        </div>
+                        <div class="list__title-text2">
+                            Более 12 000 результатов поиска
+                        </div>
+                    </div>
+                    <div class="list__items list__items1">
+                        <div class="list__items-title">
+                            Вызов и интенсификация притока скважены <div id="list__number">(Результатов: 12214)</div>
+                        </div>
+                        <div class="list__items-items">
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+                                    laboriosam animi dolore consequatur aperiam error reprehenderit fugit id quidem
+                                    iusto!
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+                                    laboriosam animi dolore consequatur aperiam error reprehenderit fugit id quidem
+                                    iusto!
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+                                    laboriosam animi dolore consequatur aperiam error reprehenderit fugit id quidem
+                                    iusto!
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var" class="text-box hidden">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Sequi quibusdam dolore, voluptatum ex quas cum corporis, deserunt delectus
+                                    facilis voluptatem excepturi inventore accusantium, doloribus magni. Nisi illum
+                                    culpa incidunt in reiciendis omnis magnam cupiditate quod debitis similique id, nam
+                                    nobis?
+                                </div>
+                                <a id="var-link" href="javascript:displ('var')">Показать текст</a>
+                            </div>
+                        </div>
+                        <div class="list__items-items">
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+                                    laboriosam animi dolore consequatur aperiam error reprehenderit fugit id quidem
+                                    iusto!
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var3" class="text-box hidden">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam dolore,
+                                    voluptatum ex quas cum corporis, deserunt delectus facilis voluptatem excepturi
+                                    inventore accusantium, doloribus magni. Nisi illum culpa incidunt in reiciendis
+                                    omnis magnam cupiditate quod debitis similique id, nam nobis?
+                                </div>
+                                <a id="var-link3" href="javascript:displ('var3')">Показать текст</a>
+                            </div>
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+                                    laboriosam animi dolore consequatur aperiam error reprehenderit fugit id quidem
+                                    iusto!
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div id="list-img">
+                                    <img src="image/img1.jpg" alt="">
+                                </div>
+                                <div id="var2" class="text-box hidden">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam dolore,
+                                    voluptatum ex quas cum corporis, deserunt delectus facilis voluptatem excepturi
+                                    inventore accusantium, doloribus magni. Nisi illum culpa incidunt in reiciendis
+                                    omnis magnam cupiditate quod debitis similique id, nam nobis?
+                                </div>
+                                <a id="var-link2" href="javascript:displ('var2')">Показать текст</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                2021 ® OilGasService Navigator • Все права защищены
+            </div>
+            <div class="footer__right">
+                <a id="var-link4" href="javascript:displ('var4')">Карта сайта</a>
+                <div class="footer__sitemap">
+                    <div class="footer__sitemap-wrapper text-box4 hidden4" id="var4">
+                        <a href="" class="close">✖ КАРТА САЙТА</a>
+                        <div class="fsw">
+                            <div class="container-footer">
+                                <div class="footer__sitemap-top">
+                                    <div class="footer__top-left">
+                                        <div class="footer__top-item">
+                                            <div class="footer__item-title">
+                                                ЗАКАЗЧИКИ
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Недропользователи</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Транспорт углеводородов</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Переработка углеводородов</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Сбыт углеводородов</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Генпорядчики</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer__top-item">
+                                            <div class="footer__item-title">
+                                                ПОСТАВЩИКИ
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Технологии и услуги</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Оборудывание и интументы</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Материалы и сырьё</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Программное обепесение</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer__top-item">
+                                            <div class="footer__item-title">
+                                                ИНФОРМАЦИЯ
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Новости</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Мероприятия</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Анаитика</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Контактная информация</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">Партнёры</a>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-items">
+                                                <div class="footer__items-item">
+                                                    <a href="">О сайте</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer__top-item">
+                                            <div class="footer__item-title">
+                                                ИННОВАЦИИ
+                                            </div>
+                                            <div class="footer__item-title">
+                                                ПРОЕКТЫ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer__top-right">
+                                        <div class="footer__top-item">
+                                            <div class="footer__top-item-title">
+                                                Телефон:
+                                            </div>
+                                            <div class="footer__top-item-text">
+                                                8-800-200-62-38,
+                                                +7(3452)50-00-30
+                                            </div>
+                                        </div>
+                                        <div class="footer__top-item">
+                                            <div class="footer__top-item-title">
+                                                Адрес головного офиса:
+                                            </div>
+                                            <div class="footer__top-item-text">
+                                                625034, г.Тюмень, ул. Камчатская, д.194, офис 409
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="footer__sitemap-bottom">
+                                    <div class="footer__bottom-left">
+                                        2021 ® OilGasService Navigator • Все права защищены
+                                    </div>
+                                    <div class="fbr">
+                                        <div class="footer__bottom-right">
+                                            <div>
+                                                <a href="" class="footer__link">Правила использования сайта</a>
+                                            </div>
+                                        </div>
+                                        <div class="footer__bottom-right">
+                                            <div>
+                                                <a href="" class="footer__link">Политика конфиденциальности и обработки
+                                                    персональных данных</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
