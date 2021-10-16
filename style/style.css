@@ -291,7 +291,7 @@ body{
     padding-bottom: 20px;
 }
 .text-box {
-    height: 64%;
+    height: 66%;
     width: 100%;
     float: left;
 }
@@ -306,6 +306,7 @@ body{
 .list__items-items{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .header__country-img,
 .header__lang-img{
