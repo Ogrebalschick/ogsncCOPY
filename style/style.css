@@ -14,6 +14,7 @@ body{
     font-family: open_sansbold;
     display: block;
     line-height: 1;
+    font-weight: 600;
 }
 
 .header__country-text {
@@ -144,7 +145,6 @@ body{
     float: right;
     display: flex;
     align-items: center;
-    padding-right: 25px;
     font-size: 15px;
 }
 .footer__wrapper {
@@ -175,10 +175,9 @@ body{
     width: 100%;
 }
 .footer__sitemap-wrapper{
-    
     display: none;
 }
-.fsw{
+#fsw{
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -188,9 +187,6 @@ body{
     /* display: none; */
     z-index: 10;
 }
-/* .footer__right:hover .footer__sitemap .footer__sitemap-wrapper{
-    display: block;
-} */
 .footer__sitemap-top{
     display: flex;
     justify-content: space-between;
@@ -291,17 +287,18 @@ body{
     padding-bottom: 20px;
 }
 .text-box {
-    height: 66%;
     width: 100%;
     float: left;
+    font-size: 13px;
 }
 
 .text-box.hidden {
     overflow-y: hidden;
-    height: 200px;
+    height: 190px;
+    font-size: 13px;
 }
 .list-item{
-    width: 183px;
+    width: 240px;
 }
 .list__items-items{
     display: flex;
@@ -310,30 +307,75 @@ body{
 }
 .header__country-img,
 .header__lang-img{
-    padding-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-/* .close{
-    display: none;
-} */
 .main--main-bg{
     display: none;
 }
-.close{
+#close{
     position: relative;
     float: right;
-    bottom: 299px;
+    bottom: 304px;
     background: #0B1625;
     color: #fff!important;
     padding: 15px;
+    border: none;
+}
+#close:hover{
+    cursor: pointer;
 }
 .container-footer{
     max-width: 1261px;
     margin: 0 auto;
 }
 .border-lii{
-    width: 35px;
-    height: 130px;
+    width: 30px;
+    height: 150px;
     background: #34A1F9;
     position: relative;
-    top: 7px;
+    top: 18px;
+}
+.list__item-title2{
+    color: #718292;
+    font-weight: 500;
+    font-size: 13px;
+}
+.list__item-title1{
+    font-weight: 600;
+    font-size: 16px;
+}
+#list-img img{
+    width: 240px;
+}
+#var1{
+    font-size: 13px;
+}
+#var3 p,
+#var2 p,
+#var1 p,
+#var p{
+    padding-bottom: 10px;
+}
+.list__item-title{
+    height: 100px;
+}
+.unshow{
+    display: none!important;
+}
+.show{
+    display: block;
+}
+#fsw__btn{
+    background: #fff;
+    border: none;
+    font-size: 15px;
+    height: 100%;
+    padding-right: 25px;
+}
+#fsw__btn:hover{
+    cursor: pointer;
+}
+.header__lang-text{
+    font-family: open_sansregular;
 }
