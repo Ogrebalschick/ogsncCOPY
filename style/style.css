@@ -291,7 +291,7 @@ body{
     padding-bottom: 20px;
 }
 .text-box {
-    height: 63%;
+    height: 64%;
     width: 100%;
     float: left;
 }
@@ -301,9 +301,7 @@ body{
     height: 200px;
 }
 .list-item{
-    width: 200px;
-    border-left: 40px solid #34A1F9;
-    padding-left: 40px;
+    width: 183px;
 }
 .list__items-items{
     display: flex;
@@ -330,4 +328,11 @@ body{
 .container-footer{
     max-width: 1261px;
     margin: 0 auto;
+}
+.border-lii{
+    width: 35px;
+    height: 130px;
+    background: #34A1F9;
+    position: relative;
+    top: 7px;
 }
